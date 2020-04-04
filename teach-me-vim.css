@@ -1,0 +1,23 @@
+#mainTitle
+{
+    font-size: 4em;
+    font-family: Times New Roman, serif;
+    text-align: center;
+
+    margin-top: 10%;
+}
+
+#mainButtons
+{
+    display: flex;
+
+    width: 40%;
+    justify-content: center;
+    margin: auto;
+}
+
+button
+{
+    font-size: 2em;
+    margin: auto;
+}
