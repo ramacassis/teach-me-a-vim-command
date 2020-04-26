@@ -5,14 +5,30 @@
     box-sizing: border-box;
 }
 
+/* Define global variables */
+:root {
+  --main-bg-color: #333333;
+  --text-color: white;
+}
+
+html
+{
+    min-height: 100%;
+
+    background-color: var(--main-bg-color);
+    background-size: cover;
+}
+
 #mainTitle
 {
     height: 20%;
     margin-top: 5%;
 
-    font-size: 4em;
-    font-family: Times New Roman, serif;
     text-align: center;
+
+    color: white;
+    font-size: 3.8em;
+    font-family: Times New Roman, serif;
 }
 
 #mainButtons
@@ -30,33 +46,40 @@
 
 .centralButtons
 {
-    font-size: 2em;
+    display: inline-block;
 
-    color: black;
-    background-color: #e7e7e7; /* Gray */
-    /* background-color: #555555; /* Black */
+    border: 2px solid var(--text-color) !important;
+    padding: 0.5em 1em;
 
-    /*border: none;*/
-    padding: 0.5em 0.8em;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
 
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    font-size: 2em;
+}
+
+.centralButtons:hover
+{
+    border-color: black !important;
+    background: var(--text-color);
+    color: var(--main-bg-color) !important;
+
+    transition: all 0.5s ease 0s;
 }
 
 #commandToDisplay
 {
-    width: 60%;
-
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
 
-    border: 1px groove black;
+    width: 60%;
+    border: 1px groove white;
     padding: 1em;
 
-    font-size: 1.5em;
-    font-family: Roboto, serif
-
     text-align: justify;
+    color: white;
+    font-size: 1.7em;
+    font-family: serif;
 }
