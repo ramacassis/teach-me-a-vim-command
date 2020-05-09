@@ -3,9 +3,9 @@
 <?php
 
 // Text files containing vim commands
-define("BASIC_COMMAND_FILE", "basicCommands.txt");
-define("MEDIUM_COMMAND_FILE", "mediumCommands.txt");
-define("ADVANCED_COMMAND_FILE", "advancedCommands.txt");
+define("BASIC_COMMAND_FILE", "commandFiles/basicCommands.txt");
+define("MEDIUM_COMMAND_FILE", "commandFiles/mediumCommands.txt");
+define("ADVANCED_COMMAND_FILE", "commandFiles/advancedCommands.txt");
 
 // Delimiter separating commands from explanations
 define("DELIMITER", "--");
